@@ -22,10 +22,9 @@ public class WordPyramid {
         pyramid(letters);
      }
       public static void pyramid(String letters) {
-        for(int i=0;letters.length()>2;i++)
-        {
-         letters = letters.substring(1,letters.length()-1);
-        System.out.println(letters);
+          System.out.println(letters);
+         if (letters.length() > 2) {
+            pyramid(letters.substring(1, letters.length() - 1));
         }
          }
   }
